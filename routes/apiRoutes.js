@@ -25,7 +25,6 @@ router.post('api/notes', (req, res) => {
     const newNoteApi = {
         title: req.body.title,
         text: req.body.text,
-        id: uuid(),
     };
     dbJson.push(newNoteApi);
     fs.writeFileSync('db/db.json', JSON.stringify (dbJson));
