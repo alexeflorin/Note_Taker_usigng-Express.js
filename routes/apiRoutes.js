@@ -3,7 +3,6 @@ const express = require ('express');
 const router = express.Router();
 //  Use the express.Router class to create modular, mountable route handlers.
 
-const {v4 : uuidv4} = require('uuid');
 //  Import the packages to create short non-sequential url-friendly unique ids.
 
 
@@ -33,7 +32,7 @@ router.post('api/notes', (req, res) => {
 
 
 
-module.export = router;
+module.exports = router;
 
 
 

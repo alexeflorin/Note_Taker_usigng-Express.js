@@ -35,8 +35,8 @@ app.use(express.static('public'));
 // Static middleware pointing to the public folder.
 
 
-app.use(api_routes);
-app.use(html_routes);
+app.use(api_routes)
+app.use(html_routes)
 // Use the function 'use' to define a set of routes.
 // Sets up the Express app to handle data parsing
 
