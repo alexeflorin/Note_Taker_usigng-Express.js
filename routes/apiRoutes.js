@@ -19,8 +19,8 @@ router.get('/api/notes', (req, res) => {
 // 'api/notes' read the db.json and return notes as Json with status confirmation.
 
 
-router.post('api/notes', (req, res) => {
-    const dbJson = JSON.parse(fs.readFileSync ( 'db/db.json', 'utf-8'));
+router.post('/api/notes', async (req, res) => {
+    const dbJson = await JSON.parse(fs.readFileSync ( 'db/db.json', 'utf-8'));
     const newNoteApi = {
         title: req.body.title,
         text: req.body.text,
